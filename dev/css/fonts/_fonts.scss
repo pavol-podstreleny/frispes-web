@@ -23,8 +23,13 @@ h3 {
   font-size: 3.2rem;
 }
 
+p,
+a,
+button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 p {
   font-size: 1.5rem;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
   color: colors.$color-grey;
 }
