@@ -1,0 +1,27 @@
+@use '../../colors/colors.scss';
+
+$font-size: 1.6rem;
+
+.btn {
+  background: transparent;
+  border: none;
+  color: colors.$color-adjecent;
+  cursor: pointer;
+  display: inline;
+  font-size: $font-size;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none;
+
+  &:after {
+    content: ">";
+    margin-left: 15px;
+    transition: margin 0.2s;
+  }
+
+  &:hover {
+    &:after {
+      margin-left: 10px;
+    }
+  }
+}
