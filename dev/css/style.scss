@@ -1,3 +1,4 @@
+/** styles **/
 @use 'util/normalize';
 @use 'util/general';
 @use 'fonts/fonts';
@@ -7,3 +8,6 @@
 @use 'components/buttons/button-more-arrow';
 @use 'components/buttons/button-rectengular';
 @use 'components/buttons/button-modifiers';
+
+/** Heading with top label **/
+@use "components/headings/heading-label";
