@@ -1,4 +1,7 @@
 @use 'util/normalize';
 @use 'util/general';
 @use 'fonts/fonts';
+
+/** Button components **/
+@use 'components/buttons/button';
 @use 'components/buttons/button-more-arrow';
