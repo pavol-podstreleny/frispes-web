@@ -1,0 +1,21 @@
+@use '../../colors/colors.scss';
+
+.card {
+  padding: 4rem;
+}
+
+.card--primary {
+  background: colors.$color-primary;
+
+  h1,
+  h2,
+  h3,
+  p,
+  span {
+    color: colors.$color-white;
+  }
+}
+
+.card--shadow {
+  box-shadow: 0 10px 30px colors.$color-grey-2;
+}
