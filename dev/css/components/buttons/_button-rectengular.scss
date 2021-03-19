@@ -1,0 +1,13 @@
+@use "../../colors/colors.scss";
+
+.btn-rectengular {
+  color: colors.$color-white;
+  background: colors.$color-adjecent;
+  padding: 1.2rem 1.6rem;
+  font-weight: 500;
+  transition: background 0.4s;
+
+  &:hover {
+    background: colors.$color-adjecent-darker;
+  }
+}
