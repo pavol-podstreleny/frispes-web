@@ -1,0 +1,22 @@
+@use '../../colors/colors.scss';
+
+.qna-card {
+  position: relative;
+
+  .qna-card__header {
+    padding: 0px;
+    color: colors.$color-black;
+  }
+  .qna-card__content {
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  .btn-rectengular {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 40%);
+  }
+}
