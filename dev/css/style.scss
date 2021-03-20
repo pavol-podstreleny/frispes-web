@@ -12,8 +12,9 @@
 /** Heading with top label **/
 @use "components/headings/heading-label";
 
-/** Card component **/
+/** Card components **/
 @use "components/cards/card";
+@use "components/cards/customer_review_card";
 
 /** authors-details **/
 @use "components/others/author-details";

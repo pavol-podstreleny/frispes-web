@@ -1,0 +1,11 @@
+@use "../../colors/colors.scss";
+
+.customer-review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: colors.$color-white;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
