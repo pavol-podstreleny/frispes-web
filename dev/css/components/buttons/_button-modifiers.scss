@@ -1,7 +1,15 @@
+@use '../../colors/colors.scss';
+
 .btn--fullwidth {
   width: 100%;
 }
 
 .btn--large {
   padding: 2rem 2.4rem;
+}
+
+.btn--shadow {
+  &:hover {
+    box-shadow: 0 5px 10px colors.$color-adjecent;
+  }
 }
