@@ -1,0 +1,32 @@
+@use '../../colors/colors.scss';
+
+.author-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .author-details__image {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    object-fit: cover;
+  }
+
+  .author-details__content {
+    margin-left: 2.1rem;
+
+    span:first-of-type {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: colors.$color-primary;
+    }
+    span {
+      padding: 3px;
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: colors.$color-grey;
+    }
+  }
+}
