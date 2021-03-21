@@ -2,21 +2,40 @@
 
 .qna-card {
   position: relative;
+  transition: background 1s;
 
   .qna-card__header {
     padding: 0px;
     color: colors.$color-black;
+    transition: color 1s;
   }
   .qna-card__content {
-    height: 0px;
-    width: 0px;
-    overflow: hidden;
+    color: colors.$color-black;
   }
 
   .btn-rectengular {
     position: absolute;
+    padding: 0.8rem 1.8rem;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%, 40%);
+    transition: background 1s;
+
+    svg {
+      transition: transform 0.5s;
+      fill: white;
+    }
   }
+}
+
+.open .qna-card {
+  background: colors.$color-adjecent;
+}
+
+.open .btn-rectengular svg {
+  transform: rotateX(180deg);
+}
+
+.open .qna-card .qna-card__content {
+  margin: 1.5rem 0rem;
 }

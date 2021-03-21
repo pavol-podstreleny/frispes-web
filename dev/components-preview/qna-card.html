@@ -13,20 +13,49 @@
     <title>Frispes</title>
   </head>
   <body>
-    <div class="card qna-card card--shadow">
-      <article>
-        <h4 class="qna-card__header">How do I know if a space is available?</h4>
-        <a href="#" class="btn btn--large btn-rectengular"
-          ><img src="../images/chevron.svg" alt=""
-        /></a>
-        <p class="qna-card__content">
-          Our team has been working at frispes for almost 2 months because our
-          office still closed. During working at frispes, we feel a new
-          experience, we can feel working with a beautiful, modern, and
-          comfortable space. And cozy cafe with high-speed internet in there.
-          Thank you for frispes and team.
-        </p>
-      </article>
+    <div class="toggler-group">
+      <div class="card qna-card card--shadow">
+        <article>
+          <h4 class="qna-card__header">
+            How do I know if a space is available?
+          </h4>
+          <a href="#" class="btn btn-rectengular btn--shadow toggler">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 0 24 24"
+              width="32"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+            </svg>
+          </a>
+          <p class="qna-card__content toggler-content">
+            Our team has been working at frispes for almost 2 months because our
+            office still closed. During working at frispes, we feel a new
+            experience, we can feel working with a beautiful, modern, and
+            comfortable space. And cozy cafe with high-speed internet in there.
+            Thank you for frispes and team.
+          </p>
+        </article>
+      </div>
     </div>
+    <body>
+      <script>
+        const togglerGroups = document.querySelectorAll(".toggler-group");
+
+        for (let i = 0; i < togglerGroups.length; i++) {
+          const actualGroup = togglerGroups[i];
+          const togglerButton = actualGroup.querySelector(".toggler");
+          togglerButton.addEventListener("click", () => {
+            if (actualGroup.classList.contains("open")) {
+              actualGroup.classList.remove("open");
+            } else {
+              actualGroup.classList.add("open");
+            }
+          });
+        }
+      </script>
+    </body>
   </body>
 </html>
