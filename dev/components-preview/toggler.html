@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Frispes</title>
+  </head>
+  <body>
+    <div class="toggler-group">
+      <button type="submit" class="toggler">Toggle</button>
+      <p class="toggler-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores
+        quidem magnam excepturi. Quasi libero reiciendis perferendis odio maxime
+        fugiat tenetur quibusdam ullam, nesciunt voluptates, minima fuga aliquid
+        officiis pariatur odit voluptas ut, id sunt omnis distinctio natus
+        dolorum. In cupiditate laudantium quibusdam quaerat nemo! Quod, natus
+      </p>
+    </div>
+    <span>Hello</span>
+    <div class="toggler-group">
+      <button type="submit" class="toggler">Toggle</button>
+      <p class="toggler-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores
+        quidem magnam excepturi. Quasi libero reiciendis perferendis odio maxime
+        fugiat tenetur quibusdam ullam, nesciunt voluptates, minima fuga aliquid
+        officiis pariatur odit voluptas ut, id sunt omnis distinctio natus
+        dolorum. In cupiditate laudantium quibusdam quaerat nemo! Quod, natus
+      </p>
+    </div>
+  </body>
+  <script>
+    const togglerGroups = document.querySelectorAll(".toggler-group");
+
+    for (let i = 0; i < togglerGroups.length; i++) {
+      const actualGroup = togglerGroups[i];
+      const togglerButton = actualGroup.querySelector(".toggler");
+      togglerButton.addEventListener("click", () => {
+        if (actualGroup.classList.contains("open")) {
+          actualGroup.classList.remove("open");
+        } else {
+          actualGroup.classList.add("open");
+        }
+      });
+    }
+  </script>
+</html>

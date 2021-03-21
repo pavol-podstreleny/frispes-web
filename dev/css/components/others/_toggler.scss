@@ -1,0 +1,14 @@
+.toggler-group {
+  .toggler-content {
+    display: block;
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .toggler {
+  }
+}
+
+.open .toggler-content {
+  height: auto;
+}
